@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-violet: hsl(263, 55%, 52%);
+    --clr-dark-grayish-blue: hsl(217, 19%, 35%);
+    --clr-dark-blackish-blue: hsl(219, 29%, 14%);
+    --clr-light-gray: hsl(0, 0%, 81%);
+    --clr-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/*utility classes*/ 
+.color-white {
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.card__person {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.card__person-image {
+    border-radius: 9999px;
+    border: 2px solid var(--clr-light-gray);
+    float: left;
+    width: 3rem;
+}
+
+.card__person-about {
+    padding-left: 2rem;
+}
+
+.card__person-status {
+    display: block;
+    opacity: 0.5;
+}
+
+.card__teaser {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+}
+
+.card__review {
+    opacity: 0.7;
+}
+
+
+.card__daniel {
+    background-color: var(--clr-violet);
+    
+}
+
+.card__jonathan {
+    background-color: var(--clr-dark-grayish-blue);
+}
+
+.card__patrick {
+    background-color: var(--clr-dark-blackish-blue);
+}
