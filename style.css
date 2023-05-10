@@ -81,6 +81,18 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     padding-bottom: 1em;
+    position: relative;
+    z-index: 2;
+}
+
+.card__teaser-quotation {
+    position: absolute;
+    top: 0;
+    right: 6rem;
+    /*to adjust the size of the element because of my bigger body font-size
+    (used standard 16px instead of 13px)*/
+    transform: scale(1.3);
+    transform-origin: top;
 }
 
 .card__review {
@@ -94,13 +106,15 @@ body {
     position: relative;
 }
 
+/*
 .card__daniel > .card__teaser::after {
     content: url(./images/bg-pattern-quotation.svg);
-    /*opacity: .5;*/
+    /*opacity: .5;
     position: absolute;
     top: 0;
     right: 1.5rem;
 }
+*/
 
 .card__jonathan {
     background-color: var(--clr-dark-grayish-blue);
